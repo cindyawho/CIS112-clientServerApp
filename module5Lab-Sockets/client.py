@@ -7,7 +7,7 @@ client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 # ~~~ CLIENT SIDE ~~~ #
 server_address = ('localhost', 12345)
 client.connect(server_address)
-print(f'\nConnected to host at port {server_address[1]} ~~~')
+print(f'\nConnected to {server_address[0]} at port {server_address[1]}\n')
 
 
 ## sending and receiving data
