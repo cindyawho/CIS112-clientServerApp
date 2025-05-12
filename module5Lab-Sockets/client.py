@@ -16,4 +16,8 @@ client.send('Please hold for user input.'.encode())
 userIn = input("\nUser, please enter a name: ")
 client.send(userIn.encode())
 
+# Server Response to user input
+received = client.recv(1024).decode('UTF-8')
+print(f'\n{received}\n')
+
 client.close()
